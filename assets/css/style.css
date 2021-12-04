@@ -1,0 +1,72 @@
+header{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    padding: 5px;
+    background-color:#131722;
+    
+}
+.headerul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+   
+}
+.headerul ul{
+    margin-left: 150px;
+    
+}
+.headerul li {
+    list-style: none;
+display: inline;
+margin-left: 25px;
+
+}
+#logo{
+    padding-right: 25px;
+}
+.headerul ul li a{
+ 
+}
+
+
+
+
+
+
+
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 48px 20px;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  
+  #IBOV {background-color: red;}
+  #NASDAQ {background-color: green;}
+  #Contact {background-color: blue;}
+  #About {background-color: orange;}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .teste {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="teste">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div id="tradingview_22c71"></div>
+            <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/symbols/NASDAQ-NDX/"
+                    rel="noopener" target="_blank"><span class="blue-text">Gráfico NDX</span></a> por TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget(
+                    {
+                        "autosize": true,
+                        "symbol": "NASDAQ:NDX",
+                        "interval": "5",
+                        "timezone": "America/Sao_Paulo",
+                        "theme": "dark",
+                        "style": "0",
+                        "locale": "br",
+                        "toolbar_bg": "#f1f3f6",
+                        "enable_publishing": false,
+                        "allow_symbol_change": true,
+                        "container_id": "tradingview_22c71"
+                    }
+                );
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+    </div>
+</body>
+
+</html>

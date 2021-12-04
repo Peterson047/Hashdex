@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-ber">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.Index📈</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="outdoor">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
+                        "symbols": [
+                            {
+                                "proName": "FOREXCOM:SPXUSD",
+                                "title": "S&P 500"
+                            },
+                            {
+                                "proName": "FOREXCOM:NSXUSD",
+                                "title": "US 100"
+                            },
+                            {
+                                "proName": "FX_IDC:EURUSD",
+                                "title": "EUR/USD"
+                            },
+                            {
+                                "proName": "BITSTAMP:BTCUSD",
+                                "title": "Bitcoin"
+                            },
+                            {
+                                "proName": "BITSTAMP:ETHUSD",
+                                "title": "Ethereum"
+                            }
+                        ],
+                            "showSymbolLogo": true,
+                                "colorTheme": "dark",
+                                    "isTransparent": false,
+                                        "displayMode": "adaptive",
+                                            "locale": "br"
+                    }
+                </script>
+        </div>
+        <!-- TradingView Widget END -->
+    </div>
+    <header>
+        <img id="logo" src="assets/img/logo.png" alt="">
+        <ul class="headerul">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">All Index</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">GitHub</a></li>
+        </ul>
+    </header>
+    <div class="tabs">
+        <button class="tablink" onclick="openPage('ibov', this, 'red')">IBOVESPA</button>
+        <button class="tablink" onclick="openPage('NASDAQ', this, 'green')" id="defaultOpen">NASDAQ</button>
+        <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+        <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+
+
+        <div id="ibov" class="tabcontent">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div id="tradingview_673aa" style=" height:85vh ;">
+                    <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/symbols/INDEX-IBOV/"
+                            rel="noopener" target="_blank"><span class="blue-text">Gráfico IBOV</span></a> por
+                        TradingView
+                    </div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                    <script type="text/javascript">
+                        new TradingView.widget(
+                            {
+                                "z-index": 1,
+                                "autosize": true,
+                                "symbol": "INDEX:IBOV",
+                                "interval": "1",
+                                "timezone": "Etc/UTC",
+                                "theme": "dark",
+                                "style": "1",
+                                "locale": "br",
+                                "toolbar_bg": "#f1f3f6",
+                                "enable_publishing": false,
+                                "allow_symbol_change": true,
+                                "container_id": "tradingview_673aa"
+                            }
+                        );
+                    </script>
+                </div>
+            </div>
+            <!-- TradingView Widget END -->
+
+        </div>
+
+
+        <div id="NASDAQ" class="tabcontent">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div id="tradingview_f9060" style=" height:85vh ;">
+                    <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/symbols/NASDAQ-AAPL/"
+                            rel="noopener" target="_blank"><span class="blue-text">Gráfico AAPL</span></a> por
+                        TradingView
+                    </div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                    <script type="text/javascript">
+                        new TradingView.widget(
+                            {
+                                "autosize": true,
+                                "symbol": "NASDAQ",
+                                "interval": "1",
+                                "timezone": "Etc/UTC",
+                                "theme": "dark",
+                                "style": "1",
+                                "locale": "br",
+                                "toolbar_bg": "#f1f3f6",
+                                "enable_publishing": false,
+                                "allow_symbol_change": true,
+                                "container_id": "tradingview_f9060"
+                            }
+                        );
+                    </script>
+                </div>
+            </div>
+            <!-- TradingView Widget END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <div id="Contact" class="tabcontent">
+            <h3>Contact</h3>
+            <p>Get in touch, or swing by for a cup of coffee.</p>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <h3>About</h3>
+            <p>Who we are and what we do.</p>
+        </div>
+    </div>
+    <script>
+        function openPage(pageName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
