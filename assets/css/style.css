@@ -79,3 +79,49 @@ header ul li a{
   #NASDAQ {background-color: green;}
   #CRIPTO {background-color: blue;}
   #RESUMO {background-color: orange;}
+
+  .open_header{
+    display: none;
+  }
+
+  .cart-items-container{
+    display: none;
+  }
+
+  @media (max-width:780px){
+    .headerul{
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width:630px){
+    .headerul{
+      display:none;
+      flex-wrap: wrap;
+    }
+    .open_header{
+      display: flex;
+      margin: 0 auto;
+    }
+    .cart-items-container{
+      display: flex;
+    }
+    .header-px, .header-px a{
+      display: flex;
+      height: 30px;
+      justify-content: space-between;
+      padding: 5px;
+      background-color:#131722;
+      font-family: 'Fjalla One', sans-serif;
+      color: #fff;
+      list-style: none;
+      color: #fff;
+      text-decoration: none;
+   
+      font-weight: 100;
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+  }
