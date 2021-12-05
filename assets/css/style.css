@@ -8,16 +8,15 @@ header{
      color: #fff;
     
 }
-.headerul{
+
+header ul{
+ 
+    position: relative;
+    margin-left: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     
-    
-   
-}
-header ul{
-    margin-left: 150px;
     
 }
 header ul li {
@@ -27,12 +26,13 @@ margin-left: 25px;
 
 }
 #logo{
-    padding-right: 25px;
+    
 }
 header ul li a{
+    display: flex;
     color: #fff;
     text-decoration: none;
-    margin-right: 45px;
+   
     font-weight: 100;
     font-size: 25px;
  text-transform: uppercase;
@@ -77,5 +77,5 @@ header ul li a{
   
   #IBOV {background-color: red;}
   #NASDAQ {background-color: green;}
-  #Contact {background-color: blue;}
-  #About {background-color: orange;}
+  #CRIPTO {background-color: blue;}
+  #RESUMO {background-color: orange;}
