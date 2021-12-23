@@ -108,9 +108,16 @@ header ul li a:hover {
     font-weight: 100;
     font-size: 20px;
     text-transform: uppercase;
-    margin-bottom: 10px; } }
-@media screen and (max-width: 300px) {
+    margin-bottom: 10px; }
+    .tablink{
+      font-size: 14px;
+    } }
+@media screen and (max-width: 360px) {
   .tabs {
-    height: 1000px; } }
+    height: 1000px; } 
+    .tablink{
+      font-size: 14px;
+    }
+  }
 
 /*# sourceMappingURL=style.css.map */
