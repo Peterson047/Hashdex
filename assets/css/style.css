@@ -4,20 +4,23 @@ header {
   justify-content: space-between;
   padding: 5px;
   background-color: #131722;
-  font-family: 'Bai Jamjuree', sans-serif;
-  color: #fff; }
+  font-family: "Bai Jamjuree", sans-serif;
+  color: #fff;
+}
 
 header ul {
   position: relative;
   margin-left: 150px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
 
 header ul li {
   list-style: none;
   display: inline;
-  margin-left: 25px; }
+  margin-left: 25px;
+}
 
 header ul li a {
   display: flex;
@@ -25,16 +28,23 @@ header ul li a {
   text-decoration: none;
   font-weight: 100;
   font-size: 25px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 header ul li a:hover {
   background-color: #08090e;
-  color: #dbdbdb;
-  border: 1px solid #861111; }
+  color: rgb(219, 219, 219);
+  border: 1px solid rgb(134, 17, 17);
+}
+
+.tabs button {
+  font-weight: 800;
+}
 
 /* Style tab links */
 .fawesome {
-  background: transparent; }
+  background: transparent;
+}
 
 .tablink {
   background-color: #555;
@@ -45,11 +55,13 @@ header ul li a:hover {
   cursor: pointer;
   padding: 14px 16px;
   font-size: 17px;
-  font-family: 'Bai Jamjuree', sans-serif;
-  width: 25%; }
+  font-family: "Bai Jamjuree", sans-serif;
+  width: 25%;
+}
 
 .tablink:hover {
-  background-color: #777; }
+  background-color: #777;
+}
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
@@ -59,48 +71,65 @@ header ul li a:hover {
   height: 100%;
   padding-left: 0;
   padding-right: 0;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+}
 
 #IBOV {
-  background-color: #14af21; }
+  background-color: #14af21;
+}
 
 #NASDAQ {
-  background-color: #c41818; }
+  background-color: #c41818;
+}
 
 #CRIPTO {
-  background-color: #cd7a07; }
+  background-color: #cd7a07;
+}
 
 #RESUMO {
-  background-color: #0077ff; }
+  background-color: #0077ff;
+  display: grid;
+  flex-direction: row;
+}
+
 
 .open_header {
-  display: none; }
+  display: none;
+}
 
 .cart-items-container {
-  display: none; }
+  display: none;
+}
 
 @media (max-width: 780px) {
   .headerul {
-    margin: 0 auto; } }
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 630px) {
   .headerul {
     display: none;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+  }
 
   .open_header {
     display: flex;
-    margin: 0 auto; }
+    margin: 0 auto;
+  }
 
   .cart-items-container {
-    display: flex; }
+    display: flex;
+  }
 
-  .header-px, .header-px a {
+  .header-px,
+  .header-px a {
     display: flex;
     height: 30px;
     justify-content: space-between;
     padding: 5px;
     background-color: #131722;
-    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: "Bai Jamjuree", sans-serif;
     color: #fff;
     list-style: none;
     color: #fff;
@@ -108,16 +137,14 @@ header ul li a:hover {
     font-weight: 100;
     font-size: 20px;
     text-transform: uppercase;
-    margin-bottom: 10px; }
-    .tablink{
-      font-size: 14px;
-    } }
-@media screen and (max-width: 360px) {
-  .tabs {
-    height: 1000px; } 
-    .tablink{
-      font-size: 14px;
-    }
+    margin-bottom: 10px;
   }
+}
+
+@media screen and (max-width: 300px) {
+  .tabs {
+    height: 1000px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
