@@ -49,3 +49,28 @@ new TradingView.widget(
         "container_id": "tradingview_673aa"
     }
 );
+//RESUMO
+new TradingView.widget({
+    "container_id": "tv-adv-widget-home",
+    "width": "100%",
+    "height": "450px",
+    "symbol": get_param("symbol", get_param("tvwidgetsymbol", "IBOV")),
+    "interval": "1",
+    "timezone": "exchange",
+    "theme": "White",
+    "style": "3",
+    "toolbar_bg": "#f1f3f6",
+    "withdateranges": true,
+    "hide_side_toolbar": false,
+    "details": false,
+    "allow_symbol_change": true,
+    "hideideas": true,
+    "widgetbar_width": 300,
+    "show_popup_button": false,
+    "popup_width": "100%",
+    "popup_height": "450px",
+    "editablewatchlist": false,
+    "customer": "BMFBOVESPA:XPML11",
+    "locale": get_lang() == 'pt' ? 'br' : get_lang()
+});
+//SCRIPT INPUT CODIGO INDICE
