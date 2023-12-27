@@ -141,6 +141,45 @@ header ul li a:hover {
   }
 }
 
+#RESUMO {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.tabcontent {
+  margin-bottom: 20px;
+}
+
+/* Estilos para o container do widget TradingView */
+.tradingview-wrapper {
+  position: relative;
+  box-sizing: content-box;
+  width: 100%;
+  height: 450px;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif;
+}
+
+/* Estilos para a div interna do widget TradingView */
+.tradingview-inner {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  padding: 0 !important;
+}
+
+/* Estilos para o iframe do widget TradingView */
+.tradingview-frame {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+
 @media screen and (max-width: 300px) {
   .tabs {
     height: 1000px;
