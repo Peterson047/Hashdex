@@ -86,12 +86,6 @@ header ul li a:hover {
   background-color: #cd7a07;
 }
 
-#RESUMO {
-  background-color: #0077ff;
-  display: grid;
-  flex-direction: row;
-}
-
 
 .open_header {
   display: none;
@@ -141,11 +135,33 @@ header ul li a:hover {
   }
 }
 
-#RESUMO {
+.container-grid {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+
+  margin: 1px auto;
+  background-color: #fff;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-row: auto auto;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+
+  .box {
+    background-color: #333;
+    padding: 2px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: sans-serif;
+  }
+
 }
+
 
 .tabcontent {
   margin-bottom: 20px;
@@ -180,9 +196,28 @@ header ul li a:hover {
 
 
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 700px) {
   .tabs {
     height: 1000px;
+  }
+
+  .container-grid {
+    margin: 2px auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    .box {
+      background-color: #333;
+      padding: 5px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-family: sans-serif;
+    }
+
   }
 }
 
