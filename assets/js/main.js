@@ -74,3 +74,27 @@ new TradingView.widget({
     "locale": get_lang() == 'pt' ? 'br' : get_lang()
 });
 //SCRIPT INPUT CODIGO INDICE
+// Obtém referências para os elementos do DOM
+var inputValor = document.getElementById('inputValor');
+var iframe = document.getElementById('tradingview_29c72');
+
+// Adiciona um ouvinte de evento para a tecla Enter pressionada
+inputValor.addEventListener('keyup', function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        atualizarIframe();
+    }
+});
+
+// Adiciona um ouvinte de evento para o botão "Ok" clicado
+inputValor.addEventListener('change', function () {
+    atualizarIframe();
+});
+
+// Função para atualizar o atributo "src" do iframe
+function atualizarIframe() {
+    var novoValor = inputValor.value;
+
+    // Atualiza o atributo "src" do iframe com o novo valor
+    iframe.src = iframe.src.replace(/symbol=[^&]*/, 'symbol=' + novoValor);
+}
