@@ -107,6 +107,10 @@ header ul li a:hover {
     flex-wrap: wrap;
   }
 
+  #tradingview_21af6-wrapper {
+    display: none;
+  }
+
   .open_header {
     display: flex;
     margin: 0 auto;
