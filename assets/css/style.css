@@ -41,6 +41,10 @@ header ul li a:hover {
   font-weight: 800;
 }
 
+.tabs.hide-content + * {
+  display: none;
+}
+
 /* Style tab links */
 .fawesome {
   background: transparent;
@@ -74,19 +78,6 @@ header ul li a:hover {
   padding-bottom: 0;
 }
 
-#IBOV {
-  background-color: #14af21;
-}
-
-#NASDAQ {
-  background-color: #c41818;
-}
-
-#CRIPTO {
-  background-color: #cd7a07;
-}
-
-
 .open_header {
   display: none;
 }
@@ -100,26 +91,21 @@ header ul li a:hover {
     margin: 0 auto;
   }
 }
-
 @media (max-width: 630px) {
   .headerul {
     display: none;
     flex-wrap: wrap;
   }
-
   #tradingview_21af6-wrapper {
     display: none;
   }
-
   .open_header {
     display: flex;
     margin: 0 auto;
   }
-
   .cart-items-container {
     display: flex;
   }
-
   .header-px,
   .header-px a {
     display: flex;
@@ -138,13 +124,10 @@ header ul li a:hover {
     margin-bottom: 10px;
   }
 }
-
 .container-grid {
   display: flex;
   align-items: center;
-
   justify-content: center;
-
   margin: 1px auto;
   background-color: #fff;
   display: grid;
@@ -152,20 +135,17 @@ header ul li a:hover {
   grid-row: auto auto;
   grid-column-gap: 1px;
   grid-row-gap: 1px;
-
-  .box {
-    background-color: #333;
-    padding: 2px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    font-family: sans-serif;
-  }
-
 }
-
+.container-grid .box {
+  background-color: #333;
+  padding: 2px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-family: sans-serif;
+}
 
 .tabcontent {
   margin-bottom: 20px;
@@ -179,7 +159,7 @@ header ul li a:hover {
   height: 450px;
   margin: 0 auto !important;
   padding: 0 !important;
-  font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Trebuchet MS", Roboto, Ubuntu, sans-serif;
 }
 
 /* Estilos para a div interna do widget TradingView */
@@ -221,32 +201,27 @@ header ul li a:hover {
   background-color: aqua;
 }
 
-
 @media screen and (max-width: 700px) {
   .tabs {
     height: 1000px;
   }
-
   .container-grid {
     margin: 2px auto;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     width: 100%;
-
-    .box {
-      background-color: #333;
-      padding: 5px;
-      width: 100%;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 40px;
-      font-family: sans-serif;
-    }
-
+  }
+  .container-grid .box {
+    background-color: #333;
+    padding: 5px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: sans-serif;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

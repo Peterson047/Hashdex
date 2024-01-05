@@ -4,28 +4,22 @@ header {
   justify-content: space-between;
   padding: 5px;
   background-color: #131722;
-  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
   color: #fff;
-
 }
 
-
 header ul {
-
   position: relative;
   margin-left: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-
 }
 
 header ul li {
   list-style: none;
   display: inline;
   margin-left: 25px;
-
 }
 
 header ul li a {
@@ -47,7 +41,9 @@ header ul li a:hover {
   font-weight: 800;
 }
 
-
+.tabs.hide-content+* {
+  display: none;
+}
 
 
 /* Style tab links */
@@ -64,9 +60,8 @@ header ul li a:hover {
   cursor: pointer;
   padding: 14px 16px;
   font-size: 17px;
-  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
   width: 25%;
-
 }
 
 .tablink:hover {
@@ -84,23 +79,6 @@ header ul li a:hover {
   padding-bottom: 0;
 }
 
-#IBOV {
-  background-color: #14af21;
-}
-
-#NASDAQ {
-  background-color: #c41818;
-}
-
-#CRIPTO {
-  background-color: #cd7a07;
-}
-
-#RESUMO {
-  background-color: #0077ff;
-  display: flex;
-}
-
 .open_header {
   display: none;
 }
@@ -109,16 +87,20 @@ header ul li a:hover {
   display: none;
 }
 
-@media (max-width:780px) {
+@media (max-width: 780px) {
   .headerul {
     margin: 0 auto;
   }
 }
 
-@media (max-width:630px) {
+@media (max-width: 630px) {
   .headerul {
     display: none;
     flex-wrap: wrap;
+  }
+
+  #tradingview_21af6-wrapper {
+    display: none;
   }
 
   .open_header {
@@ -137,22 +119,126 @@ header ul li a:hover {
     justify-content: space-between;
     padding: 5px;
     background-color: #131722;
-    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: "Bai Jamjuree", sans-serif;
     color: #fff;
     list-style: none;
     color: #fff;
     text-decoration: none;
-
     font-weight: 100;
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 10px;
   }
+}
+
+.container-grid {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+
+  margin: 1px auto;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-row: auto auto;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+
+  .box {
+    background-color: #333;
+    padding: 2px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: sans-serif;
+  }
 
 }
 
-@media screen and (max-width:300px) {
+
+.tabcontent {
+  margin-bottom: 20px;
+}
+
+/* Estilos para o container do widget TradingView */
+.tradingview-wrapper {
+  position: relative;
+  box-sizing: content-box;
+  width: 100%;
+  height: 450px;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif;
+}
+
+/* Estilos para a div interna do widget TradingView */
+.tradingview-inner {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  padding: 0 !important;
+}
+
+/* Estilos para o iframe do widget TradingView */
+.tradingview-frame {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#tradingview_29c72 {
+  width: 100%;
+  height: 100vh;
+}
+
+#inputValor {
+  height: 30px;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#btnAtualizar {
+  color: #fff;
+  padding: 4px;
+}
+
+#btnAtualizar:hover {
+  color: #c41818;
+  padding: 4px;
+  background-color: aqua;
+}
+
+
+@media screen and (max-width: 700px) {
   .tabs {
     height: 1000px;
   }
+
+  .container-grid {
+    margin: 2px auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .box {
+      background-color: #333;
+      padding: 5px;
+      width: 100%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-family: sans-serif;
+    }
+
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

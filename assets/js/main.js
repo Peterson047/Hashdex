@@ -98,3 +98,4 @@ function atualizarIframe() {
     // Atualiza o atributo "src" do iframe com o novo valor
     iframe.src = iframe.src.replace(/symbol=[^&]*/, 'symbol=' + novoValor);
 }
+
