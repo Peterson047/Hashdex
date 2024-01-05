@@ -195,16 +195,24 @@ header ul li a:hover {
   height: 100vh;
 }
 
+.input-button {
+  text-align: center;
+}
+
 #inputValor {
   height: 30px;
   color: #fff;
   font-weight: 900;
   text-transform: uppercase;
+  background-color: #fff;
+  margin: 2px 0 2px;
 }
 
 #btnAtualizar {
-  color: #fff;
+  color: #000;
   padding: 4px;
+  font-weight: 700;
+  background-color: aliceblue;
 }
 
 #btnAtualizar:hover {
@@ -215,10 +223,6 @@ header ul li a:hover {
 
 
 @media screen and (max-width: 700px) {
-  .tabs {
-    height: 1000px;
-  }
-
   .container-grid {
     margin: 2px auto;
     background-color: #fff;
