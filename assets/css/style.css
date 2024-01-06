@@ -90,44 +90,50 @@ header ul li a:hover {
   display: none;
 }
 
-@media (max-width: 780px) {
-  .headerul {
-    margin: 0 auto;
-  }
+.input-button {
+  text-align: center;
 }
-@media (max-width: 630px) {
-  .headerul {
-    display: none;
-    flex-wrap: wrap;
-  }
-  #tradingview_21af6-wrapper {
-    display: none;
-  }
-  .open_header {
-    display: flex;
-    margin: 0 auto;
-  }
-  .cart-items-container {
-    display: flex;
-  }
-  .header-px,
-  .header-px a {
-    display: flex;
-    height: 30px;
-    justify-content: space-between;
-    padding: 5px;
-    background-color: #131722;
-    font-family: "Bai Jamjuree", sans-serif;
-    color: #fff;
-    list-style: none;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 100;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
+
+#inputValor,
+#btnOK {
+  display: none;
 }
+
+#inputValor {
+  height: 40px;
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #f5f5f5;
+  margin: 10px 0;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+#btnOK {
+  display: none;
+}
+
+#btnAtualizar,
+#btnOK {
+  color: #fff;
+  padding: 10px;
+  font-weight: 700;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px 0 5px 0;
+}
+
+#btnAtualizar:hover,
+#btnOK:hover {
+  background-color: #0056b3;
+}
+
 .container-grid {
   display: flex;
   align-items: center;
@@ -187,32 +193,6 @@ header ul li a:hover {
   height: 100vh;
 }
 
-.input-button {
-  text-align: center;
-}
-
-#inputValor {
-  height: 30px;
-  color: #000;
-  font-weight: 900;
-  text-transform: uppercase;
-  background-color: #fff;
-  margin: 2px 0 2px;
-}
-
-#btnAtualizar {
-  color: #000;
-  padding: 4px;
-  font-weight: 700;
-  background-color: aliceblue;
-}
-
-#btnAtualizar:hover {
-  color: #c41818;
-  padding: 4px;
-  background-color: aqua;
-}
-
 @media screen and (max-width: 700px) {
   .container-grid {
     margin: 2px auto;
@@ -231,6 +211,44 @@ header ul li a:hover {
     justify-content: center;
     font-size: 40px;
     font-family: sans-serif;
+  }
+}
+@media (max-width: 780px) {
+  .headerul {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 630px) {
+  .headerul {
+    display: none;
+    flex-wrap: wrap;
+  }
+  #tradingview_21af6-wrapper {
+    display: none;
+  }
+  .open_header {
+    display: flex;
+    margin: 0 auto;
+  }
+  .cart-items-container {
+    display: flex;
+  }
+  .header-px,
+  .header-px a {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #131722;
+    font-family: "Bai Jamjuree", sans-serif;
+    color: #fff;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
