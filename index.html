@@ -10,6 +10,38 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+
+
+    <script>
+        function openPage(pageName, elmnt, color) {
+            // Add active class to the current button
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+
+            // Load iframes only for the active tab
+            var activeTab = document.querySelector(".tablink.active");
+            var activeIframes = activeTab.parentElement.nextElementSibling.querySelectorAll("iframe");
+            activeIframes.forEach(function (iframe) {
+                iframe.src = iframe.dataset.src;  // Load the iframe's source
+            });
+        }
+
+        // Get the iframes in inactive tabs and set their src to empty
+        var inactiveIframes = document.querySelectorAll(".tabcontent:not(:first-child) iframe");
+        inactiveIframes.forEach(function (iframe) {
+            iframe.src = "";  // Clear the iframe's source
+            iframe.dataset.src = iframe.src;  // Store the original src in a data attribute
+        });
+    </script>
 </head>
 
 <body>
